@@ -44,8 +44,6 @@ namespace FileCleaner
                 }
             }
 
-            Console.WriteLine(keep);
-            
             //folder path and days are a requirement
             if(target.Length > 0 && Directory.Exists(target) &&  deleteFilesOlderThan > 0 && !help){
                 DeleteFiles(target, deleteFilesOlderThan, recursive, keep);

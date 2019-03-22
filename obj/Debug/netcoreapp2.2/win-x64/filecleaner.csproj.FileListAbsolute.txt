@@ -1,0 +1,14 @@
+C:\Users\dano\Projects\filecleaner\bin\Debug\netcoreapp2.2\win-x64\hostpolicy.dll
+C:\Users\dano\Projects\filecleaner\bin\Debug\netcoreapp2.2\win-x64\hostfxr.dll
+C:\Users\dano\Projects\filecleaner\bin\Debug\netcoreapp2.2\win-x64\filecleaner.exe
+C:\Users\dano\Projects\filecleaner\bin\Debug\netcoreapp2.2\win-x64\filecleaner.deps.json
+C:\Users\dano\Projects\filecleaner\bin\Debug\netcoreapp2.2\win-x64\filecleaner.runtimeconfig.json
+C:\Users\dano\Projects\filecleaner\bin\Debug\netcoreapp2.2\win-x64\filecleaner.runtimeconfig.dev.json
+C:\Users\dano\Projects\filecleaner\bin\Debug\netcoreapp2.2\win-x64\filecleaner.dll
+C:\Users\dano\Projects\filecleaner\bin\Debug\netcoreapp2.2\win-x64\filecleaner.pdb
+C:\Users\dano\Projects\filecleaner\obj\Debug\netcoreapp2.2\win-x64\filecleaner.csprojAssemblyReference.cache
+C:\Users\dano\Projects\filecleaner\obj\Debug\netcoreapp2.2\win-x64\filecleaner.csproj.CoreCompileInputs.cache
+C:\Users\dano\Projects\filecleaner\obj\Debug\netcoreapp2.2\win-x64\filecleaner.AssemblyInfoInputs.cache
+C:\Users\dano\Projects\filecleaner\obj\Debug\netcoreapp2.2\win-x64\filecleaner.AssemblyInfo.cs
+C:\Users\dano\Projects\filecleaner\obj\Debug\netcoreapp2.2\win-x64\filecleaner.dll
+C:\Users\dano\Projects\filecleaner\obj\Debug\netcoreapp2.2\win-x64\filecleaner.pdb
