@@ -1,0 +1,11 @@
+c:\Users\dano\Projects\filecleaner\obj\Debug\netcoreapp2.2\filecleaner.csprojAssemblyReference.cache
+c:\Users\dano\Projects\filecleaner\obj\Debug\netcoreapp2.2\filecleaner.csproj.CoreCompileInputs.cache
+c:\Users\dano\Projects\filecleaner\obj\Debug\netcoreapp2.2\filecleaner.AssemblyInfoInputs.cache
+c:\Users\dano\Projects\filecleaner\obj\Debug\netcoreapp2.2\filecleaner.AssemblyInfo.cs
+C:\Users\dano\Projects\filecleaner\bin\Debug\netcoreapp2.2\filecleaner.deps.json
+C:\Users\dano\Projects\filecleaner\bin\Debug\netcoreapp2.2\filecleaner.runtimeconfig.json
+C:\Users\dano\Projects\filecleaner\bin\Debug\netcoreapp2.2\filecleaner.runtimeconfig.dev.json
+c:\Users\dano\Projects\filecleaner\bin\Debug\netcoreapp2.2\filecleaner.dll
+c:\Users\dano\Projects\filecleaner\bin\Debug\netcoreapp2.2\filecleaner.pdb
+c:\Users\dano\Projects\filecleaner\obj\Debug\netcoreapp2.2\filecleaner.dll
+c:\Users\dano\Projects\filecleaner\obj\Debug\netcoreapp2.2\filecleaner.pdb
