@@ -8,11 +8,21 @@ namespace FileCleaner
     {
         static void Main(string[] args)
         {
-            bool recursive = false;
-            bool help = false;
+            string helpMessage =    "\n\nThis program purges files from a directory older than N days. \n\n" +
+                                    "Options:\n" +
+                                    "-t, --target\t\tFolder path \n" +
+                                    "-r, --recursive\t\trecursive flag \n" +
+                                    "-d, --days\t\tdelete files older than N days \n" +
+                                    "-k, --keep\t\tkeep K amount of files no matter what \n";
+
+            string errorMessage  =  "\nExecution failed: \n\n" +
+                                    "You must specify a folder path and the number of days old a file can be. \n" +
+                                    @"Example: filecleaner -target C:\testFolder -days 30";
+
             string target = "";
             int keep = 0;
             int deleteFilesOlderThan = 0;
+            bool recursive = false;
         
             //build up arg options
             for(var i = 0; i < args.Length; i++){
@@ -20,38 +30,33 @@ namespace FileCleaner
                     case "-h":
                     case "-help":
                     case "--help":
-                        Console.WriteLine("\n\n This program purges files from a directory older than N days. \n" +
-                                            "\t\t -target or -t: Folder path \n" +
-                                            "\t\t -recursive or -r: recursive flag \n" +
-                                            "\t\t -days or -d: delete files older than N days \n" +
-                                            "\t\t -keep or -k: keep K amount of files no matter what \n" );
+                        Console.WriteLine(helpMessage);
+                        Environment.Exit(0);
                         break;
-                    case "-target":
+                    case "--target":
                     case "-t":
                         target = args[i + 1];
                         break;
-                    case "-recursive":
+                    case "--recursive":
                     case "-r":
                         recursive = true;
                         break;
-                    case "-days":
+                    case "--days":
                     case "-d":
                         Int32.TryParse(args[i + 1], out deleteFilesOlderThan);
                         break;
-                    case "-keep":
+                    case "--keep":
+                    case "-k":
                         Int32.TryParse(args[i + 1], out keep);
                         break;
                 }
             }
 
             //folder path and days are a requirement
-            if(target.Length > 0 && Directory.Exists(target) &&  deleteFilesOlderThan > 0 && !help){
+            if(target.Length > 0 && Directory.Exists(target) &&  deleteFilesOlderThan > 0)
                 DeleteFiles(target, deleteFilesOlderThan, recursive, keep);
-            } else {
-                Console.WriteLine(  "\nExecution failed: \n" +
-                                    "You must specify a folder path and the number of days old a file can be. \n" +
-                                    @"Example: filecleaner -target C:\testFolder -days 30");
-            }
+            else 
+                Console.WriteLine(errorMessage);
         }
 
         static void DeleteFiles(string target, int days, bool isRecursive, int keep)
