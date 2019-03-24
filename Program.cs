@@ -68,11 +68,15 @@ namespace FileCleaner
             else 
                 files = Directory.GetFiles(target);
 
-            foreach (string file in files) {
-                FileInfo fi = new FileInfo(file);
-                if (fi.LastWriteTime < DateTime.Now.AddDays(-days))
-                    if(fi.Directory.GetFiles().Length > keep)
-                        fi.Delete();
+            try{
+                foreach (string file in files) {
+                    FileInfo fi = new FileInfo(file);
+                    if (fi.LastWriteTime < DateTime.Now.AddDays(-days))
+                        if(fi.Directory.GetFiles().Length > keep)
+                            fi.Delete();
+                }
+            } catch(Exception ex){
+                Console.WriteLine("Error: Deleting Files: " + ex.Message);
             }
         }
     }
