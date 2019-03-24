@@ -2,7 +2,7 @@
 CLI tool that purges older files.  Meant to be used with a task scheduler.
 
 ## Problem
-Seomtimes applications keep backups and logs without any means to remove old ones after moving to a remote location.  Generally, a script is created to achieve this but is written without any considerations to common edge cases.
+Applications that keep backups and logs without any means to remove old ones after moving to a remote location.  Generally, a script is created to achieve this but is written without any considerations to common edge cases.
 
 ## Options
 -t, --target            Folder path  
